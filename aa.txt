@@ -1,0 +1,76 @@
+python texture_syn.py --style Texture1/blotchy_0118.jpg --mode part --Init_cor 144,224 --ratio 10.0 --lr_G 1e-4 --num_steps 5000
+python texture_syn.py --style Texture2/coral.png --mode part --Init_cor 49,190 --ratio 10.0 --lr_G 1e-4     --num_steps 5000
+python texture_syn.py --style texture/cracked_0108.jpg --mode part --Init_cor 150,50 --ratio 6.0
+python texture_syn.py --style Texture2/fish_2.png --mode part --Init_cor 84,147 --ratio 10.0 --lr_G 1e-4     --num_steps 5000
+python texture_syn.py --style Texture2/rope_4.png --mode part --Init_cor 113,77 --ratio 50.0 --lr_G 1e-4   --num_steps 5000 --slice_weight 5000000 --patch_size 16
+python texture_syn.py --style Texture2/vincent.png --mode part --Init_cor 173,255 --ratio 10.0 --lr_G 1e-4  --num_steps 5000
+python texture_syn.py --style Texture2/vincent.png --mode part --Init_cor 15,170 --ratio 10.0 --lr_G 1e-4   --num_steps 5000
+python texture_syn.py --style texture/cracked_0105.jpg --mode part --Init_cor 150,26 --ratio 6.0
+python texture_syn.py --style Texture2/Desert.png --mode part --Init_cor 70,202 --ratio 10.0 --lr_G 1e-4    --num_steps 5000
+python texture_syn.py --style Texture2/Desert.png --mode part --Init_cor 100,478 --ratio 10.0 --lr_G 1e-4   --num_steps 5000 --patch_size 32
+python texture_syn.py --style Texture2/Desert.png --mode part --Init_cor 262,429 --ratio 10.0 --lr_G 1e-4   --num_steps 5000
+
+
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 130,270 --ratio 10.0 --lr_G 1e-4  --num_steps 5000
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 53,80 --ratio 10.0 --lr_G 1e-4    --num_steps 5000
+python texture_syn.py --style Texture1/sweater.png --mode part --Init_cor 63,63 --ratio 10.0 --lr_G 1e-4 --num_steps 5000
+python texture_syn.py --style Texture2/lizzard.png --mode part --Init_cor 229,33 --ratio 10.0 --lr_G 1e-4   --num_steps 5000
+
+
+
+python texture_syn.py --style Texture2/Desert.png --mode part --Init_cor 100,478 --ratio 10.0 --lr_G 1e-4   --num_steps 5000 --patch_size 32
+python texture_syn.py --style Texture2/Desert.png --mode part --Init_cor 100,478 --ratio 5.0 --lr_G 1e-4   --num_steps 5000 --patch_size 32
+python texture_syn.py --style Texture2/Desert.png --mode part --Init_cor 100,478 --ratio 2.0 --lr_G 1e-4   --num_steps 5000 --patch_size 32
+python texture_syn.py --style Texture2/Desert.png --mode part --Init_cor 100,478 --ratio 1.0 --lr_G 1e-4   --num_steps 5000 --patch_size 32
+python texture_syn.py --style Texture2/Desert.png --mode part --Init_cor 100,478 --ratio 0.5 --lr_G 1e-4   --num_steps 5000 --patch_size 32
+
+
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 53,80 --ratio 50.0 --lr_G 1e-4    --num_steps 5000
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 53,80 --ratio 5.0 --lr_G 1e-4    --num_steps 5000
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 53,80 --ratio 2.0 --lr_G 1e-4    --num_steps 5000
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 53,80 --ratio 1.0 --lr_G 1e-4    --num_steps 5000
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 53,80 --ratio 0.5 --lr_G 1e-4    --num_steps 5000
+
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 53,80 --ratio 2.0 --lr_G 1e-4    --num_steps 55000
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 53,80 --ratio 1.0 --lr_G 1e-4    --num_steps 55000
+python texture_syn.py --style Texture2/pyramid.png --mode part --Init_cor 53,80 --ratio 0.5 --lr_G 1e-4    --num_steps 55000
+
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture1\lizzard_2.png --syn Texture_Synthesis\lizzard.png_r_10.0_cor229,33_lrg_0.0001\4800.png
+
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\022.jpg --syn Texture_Synthesis\022.jpg_r_1.0_m_1.0\0.png
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\022.jpg --syn Texture_Synthesis\022.jpg_r_1.0_m_1.0\200.png
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\022.jpg --syn Texture_Synthesis\022.jpg_r_1.0_m_1.0\400.png
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\022.jpg --syn Texture_Synthesis\022.jpg_r_1.0_m_1.0\600.png
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\022.jpg --syn Texture_Synthesis\022.jpg_r_1.0_m_1.0\800.png
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\022.jpg --syn Texture_Synthesis\022.jpg_r_1.0_m_1.0\990.png
+
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\033.jpg --syn Texture_Synthesis\FULL_record\033.jpg_r_1.0_m_1.0\10.png
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\033.jpg --syn Texture_Synthesis\FULL_record\033.jpg_r_1.0_m_1.0\200.png
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\033.jpg --syn Texture_Synthesis\FULL_record\033.jpg_r_1.0_m_1.0\400.png
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\033.jpg --syn Texture_Synthesis\FULL_record\033.jpg_r_1.0_m_1.0\600.png
+set CUDA_VISIBLE_DEVICES=1 & python Vis.py --style Texture_win\033.jpg --syn Texture_Synthesis\FULL_record\033.jpg_r_1.0_m_1.0\1490.png
+
+python text_rep.py --image mask_image\Fish\fish_2.png --mask mask_image\Fish\4980_grad.png --texture mask_image\Fish\4970.png --name fish
+python text_rep.py --image mask_image\crack0105\cracked_0105.jpg --mask mask_image\crack0105\1030_grad.png --texture mask_image\crack0105\4990.png --name 0105
+
+python text_rep.py --image mask_image\Vicent\vincent.png --mask mask_image\Vicent\4710_grad.png --texture mask_image\Vicent\4990.png --name V1
+python text_rep.py --image mask_image\Vicent\vincent.png --mask mask_image\Vicent\4890_grad.png --texture mask_image\Vicent\4900.png --name V2
+
+python text_rep.py --image mask_image\Dessert\Desert.png --mask mask_image\Dessert\1680_grad.png --texture mask_image\Dessert\4770.png --name dessert
+
+python text_rep.py --image mask_image\Lizzard\lizzard.png --mask mask_image\Lizzard\570_grad.png --texture mask_image\Lizzard\4250.png --name lizzard
+
+
+python text_rep.py --image mask_image\pyramid\pyramid.png --mask mask_image\pyramid\200_grad.png --texture mask_image\pyramid\4190.png --name p1
+python text_rep.py --image mask_image\pyramid\pyramid.png --mask mask_image\pyramid\930_grad.png --texture mask_image\pyramid\4240.png --name p2
+
+python text_rep.py --image mask_image\sweater\sweater.png --mask mask_image\sweater\2020_grad.png --texture mask_image\sweater\4990.png --name sweater
+
+python text_rep.py --image mask_image\Lizzard\lizzard.png --mask mask_image\Lizzard\900_grad.png --texture mask_image\Lizzard\4250.png --name lizzard
+
+
+python text_rep.py --image mask_image\Vicent\vincent.png --mask mask_image\Vicent\4890_grad.png --texture mask_image\Vicent\4900.png --name V2
+
+python text_rep.py --image mask_image\Vicent\vincent.png --mask mask_image\Vicent\4710_grad.png --texture mask_image\Vicent\4990.png --name V1
+python text_rep.py --image mask_image\Vicent\vincent.png --mask mask_image\Vicent\4890_grad.png --texture mask_image\Vicent\4900.png --name V2
+
