@@ -3,7 +3,7 @@
 This is the official code for Sec 5 of my PhD thesis. The code is used to extract texture from an image at a given position:
 
 
-|Input with position| Extracted texture | Corresponding mask| 
+|Input with position (the upper red dot)| Extracted texture | Corresponding mask| 
 |--------------|--------------|--------------|
 <img src="readme_image\Exemplar\vincent.png" width="256"/>  | <img src="readme_image\Partial\Vicent\1.png" width="256"/> |<img src="readme_image\Raw_mask\Vicent\4710_grad.png " width="256"/>
 
