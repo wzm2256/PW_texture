@@ -5,7 +5,7 @@ This is the official code for Sec 5 of my PhD thesis. The code is used to extrac
 
 |Input with position| Extracted texture | Corresponding mask| 
 |--------------|--------------|--------------|
-<img src="readme_image\mask_image\Fish\fishold.png" width="256"/>  | <img src="readme_image\Partial\Fish\4990.png" width="256"/> |<img src="readme_image\mask_image\Fish\fishmask_old.png " width="256"/>
+<img src="readme_image\Exemplar\vincent.png" width="256"/>  | <img src="readme_image\Partial\Vicent\1.png" width="256"/> |<img src="readme_image\Raw_mask\Vicent\4710_grad.png " width="256"/>
 
 More examples can be found in folder `readme_image` and `Collect`.
 
